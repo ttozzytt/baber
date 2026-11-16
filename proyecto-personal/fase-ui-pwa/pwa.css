@@ -202,3 +202,11 @@ main.app-views{display:flex;flex:1 1 auto;min-height:0;height:auto;overflow:hidd
 .priceboard-contact a{display:inline-flex;align-items:center;min-height:44px;color:#dfc79f;font-size:11px;text-decoration:none}
 .priceboard-contact a:hover{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:600px){.navaja-priceboard{padding:21px 17px}.priceboard-brand>b{font-size:30px}.priceboard-row{font-size:13px}.priceboard-row b{font-size:14px}}
+
+/* Limitar ampliación de imágenes para respetar la nitidez de los archivos locales. */
+.hero-art-frame{width:min(100%,390px);margin-inline:auto}
+.hero-art-frame img{width:100%;height:100%;object-fit:contain;image-rendering:auto}
+.service-art{height:170px!important;min-height:170px!important}
+.service-art img{width:100%;height:100%;object-fit:contain;background:#171715;image-rendering:auto}
+.trend-card img{max-height:190px;object-fit:contain;background:#171715}
+@media(max-width:650px){.hero-art-frame{width:min(100%,330px);height:350px}.service-art{height:155px!important;min-height:155px!important}}
