@@ -1,7 +1,7 @@
 'use strict';
 // Service Worker PWA Offline-First para Navaja 27.
 // Guarda las dos pantallas, los estilos, scripts, iconos, datos y recursos visuales locales.
-const CACHE_NAME = "navaja27-barber-v8-menu-vector";
+const CACHE_NAME = "navaja27-barber-v9-fotos-con-nombres-limpios";
 const APP_SHELL = [
   "./",
   "./index.html",
