@@ -24,6 +24,7 @@
   const $modal = $('#bookingModal');
 
   function money(amount) { return `Bs ${Number(amount || 0).toLocaleString('es-BO')}`; }
+  function priceText(service) { return service && service.price !== null && service.price !== undefined && Number.isFinite(Number(service.price)) ? money(service.price) : 'Consultar'; }
   function safeText(value) { return String(value ?? ''); }
   function localDateString(date = new Date()) {
     const y = date.getFullYear(); const m = String(date.getMonth()+1).padStart(2,'0'); const d = String(date.getDate()).padStart(2,'0');
@@ -66,9 +67,11 @@
         $body.append($meta);
         $('<h3>').text(service.name).appendTo($body);
         $('<p>').text(service.description).appendTo($body);
-        if (service.photoUrl && service.photoCredit) $('<a>').addClass('service-photo-credit').attr({href:service.photoUrl,target:'_blank',rel:'noopener noreferrer'}).text(`Foto: ${service.photoCredit} · Pexels ↗`).appendTo($body);
+        const $detailToggle = $('<button>').addClass('service-detail-toggle').attr({'type':'button','data-service-details':service.id,'aria-expanded':'false'}).text('Ver detalles +');
+        const $detail = $('<p>').addClass('service-detail').text(service.details || 'Consulta los detalles del servicio antes de reservar.').prop('hidden',true);
+        $body.append($detailToggle,$detail);
         const $bottom = $('<div>').addClass('service-bottom');
-        $('<strong>').addClass('service-price').text(money(service.price)).append($('<small>').text(' / servicio')).appendTo($bottom);
+        $('<strong>').addClass('service-price').text(priceText(service)).append($('<small>').text(service.price === null ? ' / consultar' : ' / servicio')).appendTo($bottom);
         $('<button>').addClass('service-select').attr({'type':'button','data-book-service':service.id}).text('Elegir ↗').appendTo($bottom);
         $body.append($bottom); $card.append($art,$body); $grid.append($card);
       });
@@ -117,10 +120,7 @@
       $('<span>').text(`Cabello: ${trend.hairType}`).appendTo($facts);
       $('<span>').text(`Mantenimiento: ${trend.maintenance}`).appendTo($facts);
       $facts.appendTo($body);
-      const $credits = $('<div>').addClass('trend-credits');
-      $('<a>').attr({href:trend.photoUrl,target:'_blank',rel:'noopener noreferrer'}).text(`Foto: ${trend.photoCredit} · Pexels`).appendTo($credits);
-      $('<a>').attr({href:trend.trendSourceUrl,target:'_blank',rel:'noopener noreferrer'}).text(`Tendencia: ${trend.trendSource}`).appendTo($credits);
-      $credits.appendTo($body);
+      const $credits=$('<div>').addClass('trend-credits'); $('<span>').text('Referencia visual del catálogo Navaja 27').appendTo($credits); $credits.appendTo($body);
       const $action = $('<button>').addClass('button button-dark trend-action').attr({'type':'button','data-trend-service':trend.bookingServiceId}).text(`Consultar como ${trend.bookingServiceName} ↗`);
       $action.appendTo($body);
       $card.append($art,$body);
@@ -147,10 +147,10 @@
       return response.json();
     }).then(items => {
       if (!Array.isArray(items)) throw new Error('El catálogo no contiene una lista válida.');
-      catalog = items.filter(item => item && typeof item.id === 'string' && typeof item.name === 'string' && Number.isFinite(Number(item.price)));
+      catalog = items.filter(item => item && typeof item.id === 'string' && typeof item.name === 'string' && (item.price === null || Number.isFinite(Number(item.price))));
       const select = document.getElementById('serviceSelect');
       select.replaceChildren(new Option('Selecciona un servicio',''));
-      catalog.forEach(item => select.add(new Option(`${item.name} · ${money(item.price)}`, item.id)));
+      catalog.forEach(item => select.add(new Option(`${item.name} · ${priceText(item)}`, item.id)));
       applyFilters(); updateSummary();
       $('#catalogStatus').text(`Catálogo listo: ${catalog.length} servicios cargados desde JSON.`);
     }).catch(error => {
@@ -164,7 +164,7 @@
     const service = selectedService();
     $('#summaryName').text(service ? service.name : 'Elige un servicio');
     $('#summaryDuration').text(service ? `Duración estimada · ${service.duration} min` : 'Duración estimada · —');
-    $('#summaryPrice').text(service ? money(service.price) : 'Bs 0');
+    $('#summaryPrice').text(service ? priceText(service) : 'Consultar');
     $('#summaryBarber').text($('#barberSelect').val() || 'Alex');
     const date = $('#bookingDate').val(); const time = $('#bookingTime').val();
     $('#summaryDate').text(date && time ? `${date.split('-').reverse().join('/')} · ${time}` : 'Por definir');
@@ -200,7 +200,7 @@
     const lines = [
       ['Cliente', reservation.name], ['Servicio', reservation.serviceName], ['Profesional', reservation.barber],
       ['Fecha', `${reservation.date.split('-').reverse().join('/')} · ${reservation.time}`],
-      ['Duración', `${reservation.duration} minutos`], ['Total', money(reservation.price)]
+      ['Duración', `${reservation.duration} minutos`], ['Total', reservation.priceLabel || (reservation.price === null ? 'Consultar' : money(reservation.price))]
     ];
     lines.forEach(([label,value]) => {
       const $line=$('<div>').addClass('modal-line');
@@ -224,7 +224,7 @@
     items.slice().reverse().forEach(item => {
       const $row=$('<article>').addClass('appointment-item'); const $info=$('<div>').addClass('appointment-info');
       $('<strong>').text(item.serviceName).appendTo($info);
-      $('<p>').text(`${item.name} · ${item.barber} · ${item.date.split('-').reverse().join('/')} a las ${item.time} · ${item.duration} min · ${money(item.price)}`).appendTo($info);
+      $('<p>').text(`${item.name} · ${item.barber} · ${item.date.split('-').reverse().join('/')} a las ${item.time} · ${item.duration} min · ${item.priceLabel || (item.price === null ? 'Consultar' : money(item.price))}`).appendTo($info);
       const $actions=$('<div>').addClass('appointment-actions');
       $('<span>').addClass('appointment-state').text(item.status === 'cancelada' ? 'CANCELADA' : 'SOLICITADA').appendTo($actions);
       if(item.status !== 'cancelada') $('<button>').addClass('cancel-appointment').attr({'type':'button','data-cancel-id':item.id}).text('Cancelar').appendTo($actions);
@@ -269,7 +269,7 @@
     $(document).on('submit.navaja27','#bookingForm',function(event){
       event.preventDefault(); if(!validateForm()) return;
       const service=selectedService();
-      const candidate={name:$('#clientName').val().trim(),phone:$('#clientPhone').val(),serviceId:service.id,serviceName:service.name,barber:$('#barberSelect').val(),date:$('#bookingDate').val(),time:$('#bookingTime').val(),duration:Number(service.duration),price:Number(service.price)};
+      const candidate={name:$('#clientName').val().trim(),phone:$('#clientPhone').val(),serviceId:service.id,serviceName:service.name,barber:$('#barberSelect').val(),date:$('#bookingDate').val(),time:$('#bookingTime').val(),duration:Number(service.duration),price:service.price === null ? null : Number(service.price),priceLabel:priceText(service)};
       const existing=readReservations();
       if(existing.some(item=>hasOverlap(candidate,item))){ showToast('Horario no disponible: selecciona otro turno para este profesional.',true); return; }
       if(dateTimeToMs(candidate.date,candidate.time) < Date.now()){ showToast('La hora elegida ya pasó. Selecciona otro horario.',true); return; }
@@ -282,6 +282,11 @@
       const id=this.dataset.cancelId; const items=readReservations(); const item=items.find(entry=>entry.id===id);
       if(!item || !window.confirm('¿Cancelar esta solicitud de reserva?')) return;
       item.status='cancelada'; if(saveReservations(items)){renderAppointments();showToast('La solicitud quedó cancelada.');}
+    });
+    $(document).on('click.navaja27','[data-service-details]',function(){
+      const open=$(this).attr('aria-expanded')==='true';
+      $(this).attr('aria-expanded',String(!open)).text(open?'Ver detalles +':'Ocultar detalles −');
+      $(this).next('.service-detail').prop('hidden',open);
     });
     $(document).on('click.navaja27','#detailsToggle',function(){
       const expanded=$(this).attr('aria-expanded')==='true'; $(this).attr('aria-expanded',String(!expanded)); $(this).find('b').text(expanded?'＋':'−'); $('#serviceDetails').stop(true,true).slideToggle(220);

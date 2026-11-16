@@ -121,3 +121,28 @@ main.app-views{display:flex;flex:1 1 auto;min-height:0;height:auto;overflow:hidd
 .app-view button,.app-view input,.app-view select,.app-view textarea,.main-nav a,.mobile-nav a{min-height:44px}
 .filter-tab,.pager-button,.service-select,.booking-submit,.submit-button,.cancel-button,.cancel-appointment,.menu-toggle,.mobile-menu-toggle{min-height:44px}
 @media(max-width:620px){.filter-tabs{display:flex;flex-wrap:wrap;overflow:visible;gap:6px}.filter-tab{min-height:44px;padding:0 9px}.hero-actions .button,.visit-actions .button,.emergency-inner .button{min-height:44px}.service-select{min-height:44px}.pager-button{min-height:44px}}
+
+
+/* Catálogo de servicios y referencias: tarjetas completas, con detalles desplegables. */
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.service-card{display:flex!important;flex-direction:column;min-width:0;height:auto!important;min-height:390px;overflow:hidden;border-radius:12px}
+.service-art{height:190px!important;min-height:190px!important;overflow:hidden}
+.service-art img{width:100%;height:100%;object-fit:cover}
+.service-body{display:flex;flex:1;flex-direction:column;gap:8px;min-height:190px;padding:15px!important}
+.service-body h3{font-size:19px!important;white-space:normal!important;line-height:1.18}
+.service-body p{display:block;min-height:0;font-size:11px;line-height:1.5}
+.service-detail-toggle{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--green);font-size:10px;font-weight:800;cursor:pointer}
+.service-detail{padding:10px 11px;border-left:2px solid var(--gold);background:var(--sand);font-size:10px!important;line-height:1.55!important}
+.service-bottom{margin-top:auto;padding-top:10px;gap:9px;align-items:center}
+.service-price{font-size:21px}
+.service-select{min-height:44px;padding:0 14px;font-size:10px}
+.brow-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.brow-feature-grid article{grid-template-columns:1fr 1fr}
+.brow-feature-grid img{height:220px;min-height:220px}
+.brow-example{display:grid;grid-template-columns:110px 1fr;align-items:center;gap:12px;padding:11px;border:1px solid var(--line);background:var(--paper)}
+.brow-example img{width:110px;height:105px;object-fit:cover}
+.brow-example b{font:18px var(--serif);color:var(--green)}
+.brow-example p{font-size:10px;line-height:1.5;color:var(--muted);margin:5px 0}
+@media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.service-card{min-height:340px}.service-art{height:155px!important;min-height:155px!important}.service-body{padding:11px!important}.service-body h3{font-size:16px!important}.brow-feature-grid{grid-template-columns:1fr}.brow-example{grid-template-columns:90px 1fr}.brow-example img{width:90px;height:90px}}
+@media(max-width:430px){.service-grid{grid-template-columns:1fr}.service-card{min-height:0}.service-art{height:205px!important;min-height:205px!important}.service-body{min-height:0}.brow-feature-grid article{grid-template-columns:1fr}.brow-feature-grid img{height:185px;min-height:185px}.brow-example img{width:90px;height:90px}}

@@ -1,7 +1,7 @@
 'use strict';
 // Service Worker PWA Offline-First para Navaja 27.
 // Guarda las dos pantallas, los estilos, scripts, iconos, datos y recursos visuales locales.
-const CACHE_NAME = "navaja27-barber-studio-v5-shell9-cortes-y-fotos";
+const CACHE_NAME = "navaja27-barber-studio-v6-local-fotos";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -20,7 +20,17 @@ const APP_SHELL = [
   "./imagenes/corte.svg",
   "./imagenes/degradado.svg",
   "./imagenes/portada-barberia.svg",
-  "./imagenes/corte-infantil.svg"
+  "./imagenes/corte-infantil.svg",
+  "./imagenes/barber-hero.webp",
+  "./imagenes/corte-degradado.webp",
+  "./imagenes/corte-barba.webp",
+  "./imagenes/barba-diseno.webp",
+  "./imagenes/corte-infantil.webp",
+  "./imagenes/experiencia-vip.webp",
+  "./imagenes/cejas-hilo.webp",
+  "./imagenes/cejas-diseno.webp",
+  "./imagenes/cejas-ejemplo-1.webp",
+  "./imagenes/cejas-ejemplo-2.webp"
 ];
 const JQUERY_CDN = "https://code.jquery.com/jquery-3.7.1.min.js";
 
@@ -51,23 +61,8 @@ self.addEventListener('fetch', event => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   const sameOrigin = url.origin === self.location.origin;
-  const isJQuery = url.href === JQUERY_CDN;
   if (url.searchParams.has("__n27_health")) { event.respondWith(fetch(request)); return; }
-  const isPhoto = request.destination === 'image' && url.hostname === 'images.pexels.com';
-  if (isPhoto) {
-    event.respondWith((async () => {
-      const cache = await caches.open(CACHE_NAME);
-      const saved = await cache.match(request);
-      if (saved) return saved;
-      try {
-        const live = await fetch(request);
-        if (live.ok || live.type === 'opaque') await cache.put(request, live.clone());
-        return live;
-      } catch (_) { return saved || Response.error(); }
-    })());
-    return;
-  }
-  if (!sameOrigin && !isJQuery) return;
+  if (!sameOrigin) return;
 
   if (request.mode === 'navigate') {
     event.respondWith((async () => {
