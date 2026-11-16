@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#1b2d24" name="theme-color"/>
+<meta content="Navaja 27 Barber Studio: catálogo de servicios, precios y reservas de barbería." name="description"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<title>Navaja 27 · Barber Studio</title>
+<link href="./manifest.json" rel="manifest"/>
+<link href="./icons/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="./icons/icon-192.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=DM+Serif+Display&amp;display=swap" rel="stylesheet"/>
+<link href="./pwa.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<a aria-label="Navaja 27, inicio" class="brand" href="#inicio"><span class="brand-symbol">N<span>27</span></span><span class="brand-copy"><strong>NAVAJA 27</strong><small>BARBER STUDIO</small></span></a>
+<nav aria-label="Navegación principal" class="main-nav">
+<a class="active" data-layer-link="true" href="#inicio">Inicio</a><a data-layer-link="true" href="#servicios">Servicios</a><a data-layer-link="true" href="#tendencias">Tendencias</a><a data-layer-link="true" href="#cejas">Cejas</a><a data-layer-link="true" href="#reservar">Reservar</a><a data-layer-link="true" href="#turnos">Mis turnos</a>
+<a data-layer-link="true" href="#estudio">Estudio</a></nav>
+<div class="header-actions"><span class="open-status"><i></i> AGENDA ABIERTA</span><button aria-label="Cambiar tema" class="theme-toggle" id="themeToggle" title="Cambiar tema" type="button">◐</button><button aria-expanded="false" aria-label="Abrir menú" class="mobile-menu-toggle" id="mobileMenuToggle" type="button">☰</button></div>
+</header>
+<nav aria-label="Navegación móvil" class="mobile-nav" id="mobileNav"><a data-layer-link="true" href="#inicio">Inicio</a><a data-layer-link="true" href="#servicios">Servicios</a><a data-layer-link="true" href="#tendencias">Tendencias</a><a data-layer-link="true" href="#cejas">Cejas</a><a data-layer-link="true" href="#reservar">Reservar</a><a data-layer-link="true" href="#turnos">Mis turnos</a><a data-layer-link="true" href="#estudio">Estudio</a></nav>
+<main class="app-views">
+<section aria-hidden="false" class="app-view active" data-view-name="inicio" id="view-inicio"><section class="hero section-shell" id="inicio">
+<div class="hero-copy">
+<p class="eyebrow"><span></span> PRECISIÓN · CARÁCTER · ESTILO</p>
+<h1>El estilo se nota.<br/><em>El detalle también.</em></h1>
+<p class="hero-lead">Un buen corte no se improvisa. Elegimos contigo el acabado, cuidamos cada línea y dejamos que tu estilo hable por ti.</p>
+<div class="hero-actions"><a class="button button-dark" href="#reservar">Reservar mi turno <span>↗</span></a><a class="text-link" href="#servicios">Explorar servicios <span>↓</span></a></div>
+<div class="hero-stats"><div><strong>16</strong><span>SERVICIOS</span></div><div><strong>15-85</strong><span>MINUTOS</span></div><div><strong>DESDE 15</strong><span>BS</span></div></div>
+</div>
+<div class="hero-art-wrap"><div class="hero-art-frame"><img alt="Barbero trabajando el corte de cabello de un cliente" fetchpriority="high" height="520" loading="eager" src="https://images.pexels.com/photos/7781844/pexels-photo-7781844.jpeg?cs=srgb&amp;dl=pexels-leonardokfn-7781844.jpg&amp;fm=jpg" width="620"/><a class="photo-credit barber-hero-credit" href="https://www.pexels.com/photo/a-barber-cutting-a-man-s-hair-7781844/" rel="noopener noreferrer" target="_blank">Foto: Leonardo Hidalgo · Pexels</a></div><div class="hero-stamp"><span>EST.</span><strong>27</strong><small>BARBER<br/>CRAFT</small></div><div class="hero-note"><span>01 / 03</span><strong>Tu imagen,<br/>bien trabajada.</strong></div></div>
+</section><div class="marquee"><span>BUEN CORTE · BUEN DETALLE · BUEN ESTILO ·</span><span>BUEN CORTE · BUEN DETALLE · BUEN ESTILO ·</span></div></section><section aria-hidden="true" class="app-view" data-view-name="servicios" id="view-servicios"><section class="services-section section-shell" id="servicios">
+<div class="section-heading"><div><p class="eyebrow"><span></span> EL MENÚ DE LA CASA</p><h2>Servicios con <em>intención.</em></h2></div><p class="section-intro">Escoge el servicio que va contigo. El precio y la duración se muestran antes de confirmar.</p></div>
+<div class="catalog-tools"><label class="search-field"><span>⌕</span><input autocomplete="off" id="serviceSearch" placeholder="Buscar corte, barba o combo..." type="search"/><kbd>/</kbd></label><div aria-label="Filtrar servicios" class="filter-tabs" role="group"><button class="filter-tab active" data-filter="todos" type="button">Todos</button><button class="filter-tab" data-filter="cabello" type="button">Cabello</button><button class="filter-tab" data-filter="barba" type="button">Barba</button><button class="filter-tab" data-filter="combos" type="button">Combos</button><button class="filter-tab" data-filter="cejas" type="button">Cejas</button></div></div>
+<div aria-live="polite" class="service-grid" id="serviceGrid"><div class="loading-card">Preparando el catálogo...</div></div><div aria-label="Páginas de servicios" class="view-pager" id="servicePager"></div>
+<p aria-live="polite" class="catalog-status" id="catalogStatus" role="status">Cargando servicios desde el catálogo local.</p><p class="service-price-note">Precios ilustrativos para la demo académica; confirma tarifa y disponibilidad antes de una atención real. Las fotografías son referencias de estilo, no resultados garantizados.</p>
+</section></section><section aria-hidden="true" class="app-view" data-view-name="tendencias" id="view-tendencias"><section aria-labelledby="trendsTitle" class="trends-section section-shell" id="tendencias">
+<div class="section-heading">
+<div><p class="eyebrow"><span></span> INSPIRACIÓN ACTUALIZADA · 2026</p><h2 id="trendsTitle">Cortes con <em>carácter.</em></h2></div>
+<p class="section-intro">Ideas actuales para encontrar tu próximo estilo. Mira la referencia, revisa cómo se adapta a tu cabello y consulta el servicio relacionado.</p>
+</div>
+<div class="trend-intro"><strong>La tendencia de este año:</strong> textura natural, movimiento y degradados suaves. No todos los cortes quedan igual en todos los cabellos; por eso el acabado se define contigo antes de empezar.</div>
+<div aria-live="polite" class="trend-grid" id="trendGrid"><p class="loading-card">Cargando referencias de cortes...</p></div>
+<p class="trend-disclaimer">Las fotografías son referencias visuales de Pexels; los nombres y descripciones de tendencias se contrastaron con publicaciones profesionales de 2026. El servicio y el precio final se mantienen según el catálogo de Navaja 27.</p>
+</section></section><section aria-hidden="true" class="app-view" data-view-name="cejas" id="view-cejas"><section aria-labelledby="browTitle" class="brow-section section-shell" id="cejas"><div class="section-heading"><div><p class="eyebrow"><span></span> DETALLE Y PERFILADO</p><h2 id="browTitle">Cejas con <em>definición.</em></h2></div><p class="section-intro">Limpieza, depilación con hilo y perfilación de cejas como servicios complementarios del estudio.</p></div><div class="brow-feature-grid"><article><img alt="Profesional realizando depilación de cejas con hilo" decoding="async" loading="lazy" src="https://images.pexels.com/photos/8558244/pexels-photo-8558244.jpeg?auto=compress&amp;dpr=1&amp;h=750&amp;w=1260"/><div><b>Depilación con hilo</b><p>Retiro de vello fino siguiendo la línea natural de la ceja.</p><a href="https://www.pexels.com/photo/a-side-view-of-a-woman-having-a-threading-procedure-8558244/" rel="noopener noreferrer" target="_blank">Foto: Nataliya Vaitkevich · Pexels ↗</a></div></article><article><img alt="Detalle de perfilación y limpieza del contorno de cejas" decoding="async" loading="lazy" src="https://images.pexels.com/photos/6135624/pexels-photo-6135624.jpeg?auto=compress&amp;dpr=1&amp;h=750&amp;w=1260"/><div><b>Perfilación y diseño</b><p>Definición del contorno y simetría de acuerdo con el rostro.</p><a href="https://www.pexels.com/photo/photo-of-a-woman-getting-her-eyebrows-plucked-6135624/" rel="noopener noreferrer" target="_blank">Foto: Gabriel Puyén · Pexels ↗</a></div></article></div><p class="brow-disclaimer">La depilación y perfilación se realizan únicamente con consentimiento y evaluación del tipo de piel. Consulta antes si existe irritación o sensibilidad.</p></section></section><section aria-hidden="true" class="app-view" data-view-name="reservar" id="view-reservar"><section class="booking-section section-shell" id="reservar">
+<div class="section-heading"><div><p class="eyebrow"><span></span> TU PRÓXIMA VISITA</p><h2>Reserva tu <em>momento.</em></h2></div><p class="section-intro">Elige servicio, profesional y horario. El resumen se actualiza en el momento.</p></div>
+<div class="booking-layout">
+<form class="booking-card" id="bookingForm" novalidate="">
+<div class="booking-card-top"><span>FORMULARIO DE RESERVA</span><b>01 — 04</b></div>
+<div class="form-grid">
+<label class="field full"><span>Tu nombre</span><input autocomplete="name" id="clientName" maxlength="60" name="clientName" placeholder="Ej. Diego Pérez" required="" type="text"/><small class="field-error" id="nameError"></small></label>
+<label class="field"><span>Celular</span><input autocomplete="tel" id="clientPhone" inputmode="numeric" maxlength="8" name="clientPhone" placeholder="71234567" required="" type="tel"/><small class="field-error" id="phoneError"></small></label>
+<label class="field"><span>Servicio</span><select id="serviceSelect" required=""><option value="">Cargando servicios...</option></select><small class="field-error" id="serviceError"></small></label>
+<label class="field"><span>Profesional</span><select id="barberSelect"><option value="Alex">Alex</option><option value="Mateo">Mateo</option><option value="Equipo N27">Primer disponible</option></select></label>
+<label class="field"><span>Fecha</span><input id="bookingDate" required="" type="date"/><small class="field-error" id="dateError"></small></label>
+<label class="field"><span>Hora</span><select id="bookingTime" required=""><option value="">Selecciona una hora</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option></select><small class="field-error" id="timeError"></small></label>
+</div>
+<div class="accordion-block"><button aria-expanded="false" class="accordion-trigger" id="detailsToggle" type="button"><span>¿Qué incluye cada servicio?</span><b>＋</b></button><div class="accordion-panel" id="serviceDetails"><p>Todos los servicios incluyen una breve asesoría de estilo, preparación del puesto y acabado final. Los combos añaden cuidado de barba o tratamiento según la opción elegida.</p></div></div>
+<button class="button button-dark booking-submit" type="submit">Revisar reserva <span>↗</span></button>
+<p class="local-note">Las solicitudes de esta versión académica se guardan localmente en este dispositivo.</p>
+</form>
+<aside class="booking-summary">
+<div class="summary-head"><span>RESUMEN DE TU VISITA</span><span class="summary-mark">N27</span></div>
+<div class="summary-service" id="summaryService"><div class="summary-icon">✦</div><div><small>SERVICIO SELECCIONADO</small><strong id="summaryName">Elige un servicio</strong><span id="summaryDuration">Duración estimada · —</span></div></div>
+<div class="summary-line"><span>Profesional</span><strong id="summaryBarber">Alex</strong></div><div class="summary-line"><span>Fecha y hora</span><strong id="summaryDate">Por definir</strong></div>
+<div class="summary-total"><span>INVERSIÓN</span><strong id="summaryPrice">Bs 0</strong></div>
+<div class="summary-foot"><span>PRECIOS EN BOLIVIANOS</span><span>NO SE COBRA ONLINE</span></div>
+</aside>
+</div>
+</section></section><section aria-hidden="true" class="app-view" data-view-name="turnos" id="view-turnos"><section class="appointments-section section-shell" id="turnos"><div class="section-heading"><div><p class="eyebrow"><span></span> TU HISTORIAL</p><h2>Mis <em>turnos.</em></h2></div><span class="appointment-count" id="appointmentCount">0 RESERVAS</span></div><div class="appointment-list" id="appointmentList"><p class="empty-appointments">Todavía no tienes reservas. Cuando confirmes una, aparecerá aquí.</p></div></section></section><section aria-hidden="true" class="app-view" data-view-name="estudio" id="view-estudio"><section class="experience-section" id="estudio">
+<div class="section-shell experience-grid"><div class="experience-number">N<span>27</span></div><div><p class="eyebrow eyebrow-light"><span></span> EL RITUAL IMPORTA</p><h2>No es solo cortar.<br/><em>Es salir distinto.</em></h2><p>Trabajamos con tiempo, limpieza y atención a los detalles para que cada visita se sienta personal.</p></div><div class="experience-list"><div><b>01</b><span>Asesoría antes del corte</span></div><div><b>02</b><span>Herramientas limpias y cuidadas</span></div><div><b>03</b><span>Acabado según tu estilo</span></div></div></div>
+</section><section class="sustainability"><div class="section-shell sustainability-inner"><div><p class="eyebrow"><span></span> COMPROMISO DEL PROYECTO</p><h2>Un oficio con futuro.<br/><em>Un consumo más consciente.</em></h2></div><div class="ods-cards"><article><b>ODS 8</b><strong>Trabajo decente</strong><p>Valorar el oficio, la capacitación y un entorno de trabajo seguro.</p></article><article><b>ODS 12</b><strong>Consumo responsable</strong><p>Promover el uso medido de productos y la correcta separación de residuos.</p></article></div><small class="proposal-note">Enfoque propuesto para el proyecto académico; no representa una certificación de un negocio real.</small></div></section><footer class="site-footer legacy-site-footer"><div class="section-shell footer-inner"><a class="brand" href="#inicio"><span class="brand-symbol">N<span>27</span></span><span class="brand-copy"><strong>NAVAJA 27</strong><small>BARBER STUDIO</small></span></a><p>Precisión en cada detalle. © 2026 Navaja 27 · Proyecto académico.</p><span aria-live="polite" class="network-pill" id="networkStatus" role="status"><i></i><b>Comprobando...</b></span></div></footer></section></main>
+<div class="app-status-bar" id="appStatusBar">Diseño Web II · Navegación por vistas · Datos de demostración guardados en este dispositivo</div><div aria-hidden="true" aria-labelledby="modalTitle" aria-modal="true" class="modal" id="bookingModal" role="dialog"><div class="modal-card"><button aria-label="Cerrar" class="modal-close" id="modalClose" type="button">×</button><p class="eyebrow"><span></span> ÚLTIMA REVISIÓN</p><h2 id="modalTitle">Confirma tu <em>turno.</em></h2><p class="modal-intro">Revisa los datos. La selección se mantiene durante:</p><div class="countdown" id="countdown">00:30</div><div class="modal-summary" id="modalSummary"></div><p class="modal-expiry" id="modalExpiry" role="status"></p><div class="modal-actions"><button class="button button-outline" id="cancelModal" type="button">Volver</button><button class="button button-dark" id="confirmBooking" type="button">Confirmar turno <span>✓</span></button></div></div></div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+
+<script defer="" src="./pwa.js"></script><script defer="True" src="./pwa.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script defer src="./pwa.js"></script>
+</body>
+</html>

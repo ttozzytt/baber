@@ -1,0 +1,30 @@
+{
+  "id": "./index.html",
+  "name": "Navaja 27 | Barber Studio",
+  "short_name": "Navaja 27",
+  "description": "Catálogo de servicios, inspiración de cortes masculinos en tendencia 2026 y reservas locales de Navaja 27.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3eee4",
+  "theme_color": "#1b2d24",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "lifestyle",
+    "beauty"
+  ]
+}
