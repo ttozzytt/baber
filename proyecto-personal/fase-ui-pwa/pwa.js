@@ -240,7 +240,7 @@
     pendingReservation.id=`N27-${Date.now()}`; pendingReservation.status='solicitada'; pendingReservation.createdAt=new Date().toISOString();
     items.push(pendingReservation);
     if (!saveReservations(items)) return;
-    closeModal(); renderAppointments(); showToast('Reserva guardada en este dispositivo. Contacta al local para confirmar la atención.');
+    closeModal(); renderAppointments(); showToast('Solicitud guardada en este dispositivo. Confirma el horario con Navaja 27 por WhatsApp.');
     $('#bookingForm')[0].reset(); updateSummary(); if(window.appShowView)window.appShowView('turnos');else location.hash='turnos';
   }
   function initEvents() {
@@ -274,6 +274,12 @@
       if(existing.some(item=>hasOverlap(candidate,item))){ showToast('Horario no disponible: selecciona otro turno para este profesional.',true); return; }
       if(dateTimeToMs(candidate.date,candidate.time) < Date.now()){ showToast('La hora elegida ya pasó. Selecciona otro horario.',true); return; }
       openModal(candidate);
+    });
+    $(document).on('click.navaja27','#contactWhatsApp',function(){
+      if(!pendingReservation){showToast('Primero revisa los datos del turno.',true);return;}
+      const p=pendingReservation;
+      const message=`Hola, Navaja 27. Quiero consultar disponibilidad para ${p.serviceName}, a nombre de ${p.name}, el ${p.date} a las ${p.time}. ¿Me pueden confirmar el turno?`;
+      window.open(`https://wa.me/59170812345?text=${encodeURIComponent(message)}`,'_blank','noopener');
     });
     $(document).on('click.navaja27','#confirmBooking',confirmPending);
     $(document).on('click.navaja27','#cancelModal, #modalClose',closeModal);

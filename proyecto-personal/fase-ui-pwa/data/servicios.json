@@ -8,9 +8,9 @@
     "priceLabel": "Bs 25",
     "duration": 35,
     "image": "./imagenes/barber-hero.webp",
-    "tag": "CLÁSICO",
-    "details": "Incluye consulta breve sobre el largo, corte a máquina o tijera y revisión del contorno antes de terminar.",
-    "imageAlt": "Corte clásico en Navaja 27"
+    "tag": "CORTES MODERNOS",
+    "details": "Corte clásico con asesoría de largo y acabado limpio. Se define el estilo contigo antes de empezar.",
+    "imageAlt": "Corte masculino clásico"
   },
   {
     "id": "corte-degradados",
@@ -20,36 +20,10 @@
     "price": 30,
     "priceLabel": "Bs 30",
     "duration": 45,
-    "image": "./imagenes/corte-degradado.webp",
-    "tag": "DEGRADADO",
-    "details": "Puedes elegir degradado bajo, medio o alto. Se ajusta la transición a la forma de tu cabeza y al largo que quieras conservar.",
-    "imageAlt": "Corte con degradados en Navaja 27"
-  },
-  {
-    "id": "barba-mas-diseno",
-    "name": "Barba más diseño",
-    "category": "barba",
-    "description": "Perfilado de barba y definición de líneas para mantener su forma.",
-    "price": 25,
-    "priceLabel": "Bs 25",
-    "duration": 30,
-    "image": "./imagenes/barba-diseno.webp",
-    "tag": "BARBA",
-    "details": "Se revisa el contorno de mejillas y cuello, se define la forma y se realiza el acabado solicitado.",
-    "imageAlt": "Barba más diseño en Navaja 27"
-  },
-  {
-    "id": "corte-mas-barba",
-    "name": "Corte más barba",
-    "category": "combos",
-    "description": "Servicio combinado de cabello y barba en una sola visita.",
-    "price": 50,
-    "priceLabel": "Bs 50",
-    "duration": 65,
-    "image": "./imagenes/corte-barba.webp",
-    "tag": "COMBO",
-    "details": "Incluye corte de cabello, perfilado de barba y acabado coordinado para mantener un estilo uniforme.",
-    "imageAlt": "Corte más barba en Navaja 27"
+    "image": "./imagenes/barber-working.webp",
+    "tag": "CORTES MODERNOS",
+    "details": "Puedes consultar por el degradado que prefieres y acordar la transición y el largo superior antes del corte.",
+    "imageAlt": "Barbero trabajando un corte con degradado"
   },
   {
     "id": "corte-infantil",
@@ -60,47 +34,73 @@
     "priceLabel": "Bs 20",
     "duration": 30,
     "image": "./imagenes/corte-infantil.webp",
-    "tag": "INFANTIL",
-    "details": "Se conversa con el acompañante sobre el estilo y el largo. El corte se realiza con paciencia y de acuerdo con la comodidad del niño.",
-    "imageAlt": "Corte infantil en Navaja 27"
+    "tag": "CORTES MODERNOS",
+    "details": "El estilo y el largo se coordinan con el acompañante, cuidando que la experiencia sea cómoda para el niño.",
+    "imageAlt": "Referencia de corte infantil"
+  },
+  {
+    "id": "barba-mas-diseno",
+    "name": "Barba más diseño",
+    "category": "barba",
+    "description": "Perfilado de barba y definición de líneas para mantener su forma.",
+    "price": 25,
+    "priceLabel": "Bs 25",
+    "duration": 30,
+    "image": "./imagenes/barba-diseno.webp",
+    "tag": "BARBA & DISEÑO",
+    "details": "Incluye perfilado y definición de contornos de acuerdo con la forma que elijas.",
+    "imageAlt": "Barbero perfilando una barba"
+  },
+  {
+    "id": "corte-mas-barba",
+    "name": "Corte más barba",
+    "category": "combos",
+    "description": "Servicio combinado de cabello y barba en una sola visita.",
+    "price": 50,
+    "priceLabel": "Bs 50",
+    "duration": 65,
+    "image": "./imagenes/corte-barba.webp",
+    "tag": "BARBA & DISEÑO",
+    "details": "Combina el corte de cabello y el perfilado de barba para conseguir un acabado coordinado.",
+    "imageAlt": "Servicio de corte y arreglo de barba"
   },
   {
     "id": "experiencia-vip",
     "name": "Experiencia VIP",
     "category": "combos",
-    "description": "Atención extendida y personalizada para quienes buscan un servicio especial.",
+    "description": "Cuidado premium, toalla caliente y detalles especiales para una visita diferente.",
     "price": null,
     "priceLabel": "Consultar",
     "duration": 75,
-    "image": "./imagenes/experiencia-vip.webp",
-    "tag": "VIP",
-    "details": "La experiencia, los complementos y el precio se coordinan directamente antes de reservar.",
-    "imageAlt": "Experiencia VIP en Navaja 27"
+    "image": "./imagenes/vip-shave.webp",
+    "tag": "EXPERIENCIA VIP",
+    "details": "Cuidado premium, toalla caliente y más. Consulta con el estudio los detalles y la disponibilidad de esta experiencia.",
+    "imageAlt": "Servicio premium de barbería"
   },
   {
     "id": "perfilado-cejas",
-    "name": "Perfilado de cejas",
+    "name": "Depilación con hilo",
     "category": "cejas",
-    "description": "Limpieza del contorno para conservar la forma natural de las cejas.",
-    "price": null,
-    "priceLabel": "Consultar",
+    "description": "Depilación con hilo para definir y limpiar el contorno de las cejas.",
+    "price": 25,
+    "priceLabel": "Bs 25",
     "duration": 20,
     "image": "./imagenes/cejas-hilo.webp",
-    "tag": "CEJAS",
-    "details": "Ejemplo de servicio complementario. La técnica y el precio se consultan antes de realizarlo.",
-    "imageAlt": "Perfilado de cejas en Navaja 27"
+    "tag": "SERVICIOS DE CEJAS",
+    "details": "Trabajo de precisión con hilo para retirar vello fino y mantener la forma natural de la ceja.",
+    "imageAlt": "Depilación de cejas con hilo"
   },
   {
     "id": "diseno-cejas",
-    "name": "Diseño de cejas",
+    "name": "Perfilación y diseño",
     "category": "cejas",
-    "description": "Definición de forma y simetría de acuerdo con el rostro.",
-    "price": null,
-    "priceLabel": "Consultar",
+    "description": "Perfilación y diseño de cejas adaptados a la forma del rostro.",
+    "price": 20,
+    "priceLabel": "Bs 20",
     "duration": 25,
     "image": "./imagenes/cejas-diseno.webp",
-    "tag": "CEJAS",
-    "details": "Ejemplo de diseño de cejas. Se acuerda la forma con el cliente y se consulta el precio antes del servicio.",
-    "imageAlt": "Diseño de cejas en Navaja 27"
+    "tag": "SERVICIOS DE CEJAS",
+    "details": "Se define el contorno y la forma de las cejas de acuerdo con el rostro y la preferencia del cliente.",
+    "imageAlt": "Ejemplo de perfilación y diseño de cejas"
   }
 ]

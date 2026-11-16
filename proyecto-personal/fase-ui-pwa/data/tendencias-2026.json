@@ -1,21 +1,21 @@
 [
   {
     "id": "fade-textura",
-    "name": "Degradado con textura",
-    "tag": "CORTE ACTUAL",
-    "description": "Laterales con transición progresiva y parte superior con textura para dar movimiento.",
-    "hairType": "Liso u ondulado",
-    "maintenance": "Retoque periódico del degradado",
+    "name": "Corte con degradado",
+    "tag": "CORTE MODERNO",
+    "description": "Una transición limpia en los laterales con textura en la parte superior.",
+    "hairType": "Consulta según tu tipo de cabello",
+    "maintenance": "Retoque según crecimiento",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "./imagenes/corte-degradado.webp",
-    "imageAlt": "Referencia de degradado con textura"
+    "image": "./imagenes/barber-working.webp",
+    "imageAlt": "Referencia de corte degradado"
   },
   {
     "id": "barba-definida",
-    "name": "Barba perfilada",
-    "tag": "DETALLE",
-    "description": "Contorno definido en mejillas y cuello para mantener la forma de la barba.",
+    "name": "Barba con diseño",
+    "tag": "BARBA & DISEÑO",
+    "description": "Contornos definidos y acabado cuidado para dar forma a la barba.",
     "hairType": "Barba corta o media",
     "maintenance": "Según crecimiento",
     "bookingServiceId": "barba-mas-diseno",
@@ -27,19 +27,19 @@
     "id": "corte-combinado",
     "name": "Corte más barba",
     "tag": "COMBINADO",
-    "description": "Cabello y barba trabajados como un solo estilo, con acabado equilibrado.",
+    "description": "Cabello y barba trabajados en conjunto para un estilo uniforme.",
     "hairType": "Según el estilo elegido",
-    "maintenance": "Ajuste cuando crezca el cabello",
+    "maintenance": "Retoque según crecimiento",
     "bookingServiceId": "corte-mas-barba",
     "bookingServiceName": "Corte más barba",
     "image": "./imagenes/corte-barba.webp",
-    "imageAlt": "Referencia de corte más barba"
+    "imageAlt": "Referencia de corte y barba"
   },
   {
     "id": "infantil",
     "name": "Corte infantil",
     "tag": "FAMILIA",
-    "description": "Una opción sencilla y cómoda, acordada previamente con el acompañante.",
+    "description": "Una opción cómoda y sencilla, acordada previamente con el acompañante.",
     "hairType": "Cabello infantil",
     "maintenance": "Según el largo elegido",
     "bookingServiceId": "corte-infantil",
@@ -51,12 +51,12 @@
     "id": "vip",
     "name": "Experiencia VIP",
     "tag": "SERVICIO ESPECIAL",
-    "description": "Atención personalizada y tiempo adicional para coordinar los detalles del servicio.",
-    "hairType": "Personalizado",
-    "maintenance": "Se coordina en el local",
+    "description": "Cuidado premium con toalla caliente y detalles que se coordinan con el estudio.",
+    "hairType": "Experiencia personalizada",
+    "maintenance": "Consultar disponibilidad",
     "bookingServiceId": "experiencia-vip",
     "bookingServiceName": "Experiencia VIP",
-    "image": "./imagenes/experiencia-vip.webp",
-    "imageAlt": "Referencia de experiencia vip"
+    "image": "./imagenes/vip-shave.webp",
+    "imageAlt": "Referencia de experiencia VIP"
   }
 ]

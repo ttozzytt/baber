@@ -1,7 +1,7 @@
 'use strict';
 // Service Worker PWA Offline-First para Navaja 27.
 // Guarda las dos pantallas, los estilos, scripts, iconos, datos y recursos visuales locales.
-const CACHE_NAME = "navaja27-barber-studio-v6-local-fotos";
+const CACHE_NAME = "navaja27-barber-v7-carta-fotos-originales";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -30,7 +30,10 @@ const APP_SHELL = [
   "./imagenes/cejas-hilo.webp",
   "./imagenes/cejas-diseno.webp",
   "./imagenes/cejas-ejemplo-1.webp",
-  "./imagenes/cejas-ejemplo-2.webp"
+  "./imagenes/cejas-ejemplo-2.webp",
+  "./imagenes/menu-navaja27.webp",
+  "./imagenes/barber-working.webp",
+  "./imagenes/barba-diseno.webp"
 ];
 const JQUERY_CDN = "https://code.jquery.com/jquery-3.7.1.min.js";
 

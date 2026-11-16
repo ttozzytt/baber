@@ -146,3 +146,32 @@ main.app-views{display:flex;flex:1 1 auto;min-height:0;height:auto;overflow:hidd
 @media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.service-card{min-height:340px}.service-art{height:155px!important;min-height:155px!important}.service-body{padding:11px!important}.service-body h3{font-size:16px!important}.brow-feature-grid{grid-template-columns:1fr}.brow-example{grid-template-columns:90px 1fr}.brow-example img{width:90px;height:90px}}
 @media(max-width:430px){.service-grid{grid-template-columns:1fr}.service-card{min-height:0}.service-art{height:205px!important;min-height:205px!important}.service-body{min-height:0}.brow-feature-grid article{grid-template-columns:1fr}.brow-feature-grid img{height:185px;min-height:185px}.brow-example img{width:90px;height:90px}}
+
+
+/* Carta y presentación comercial: jerarquía clara y mejor lectura en móvil. */
+.hero-art-frame{height:475px;background:#171715;border-radius:190px 190px 12px 12px}
+.hero-art-frame:before{color:#e8d5b1}
+.hero-art-frame img{object-fit:cover;object-position:center 38%;padding:0}
+.button-whatsapp{background:#e8f0e4;border:1px solid #c9dbc3;color:#24533b}
+.button-whatsapp:hover{background:#d6e8d0}
+.printed-menu{display:grid;grid-template-columns:.78fr 1.22fr;align-items:center;gap:28px;margin:0 0 30px;padding:24px;background:#f0e7d8;border:1px solid rgba(38,56,47,.12);border-radius:8px}
+.printed-menu-copy{padding:10px}
+.printed-menu-copy h3{font:38px/1.06 var(--serif);color:var(--green);margin:14px 0}
+.printed-menu-copy h3 em{font-style:normal;color:var(--rust)}
+.printed-menu-copy p:not(.eyebrow){max-width:340px;color:#74766b;font-size:11px;line-height:1.8;margin:0 0 20px}
+.printed-menu-image{display:block;justify-self:center;width:min(100%,480px);overflow:hidden;background:#151513;border-radius:6px;box-shadow:0 16px 42px rgba(20,22,18,.18)}
+.printed-menu-image img{display:block;width:100%;height:auto;max-height:700px;object-fit:contain}
+.service-grid{align-items:stretch}
+.service-card{height:100%;display:flex;flex-direction:column}
+.service-art{height:220px}
+.service-body{display:flex;flex:1;flex-direction:column}
+.service-bottom{margin-top:auto}
+.service-detail-toggle{min-height:44px}
+.service-detail{padding:10px 12px;background:#f4efe5;border-left:2px solid var(--gold);font-size:10px!important;line-height:1.65!important}
+.summary-whatsapp{display:flex;align-items:center;justify-content:center;min-height:46px;margin-top:14px;padding:0 10px;border:1px solid rgba(230,239,226,.4);border-radius:4px;color:#eaf1e5;font-size:9px;font-weight:700;text-align:center}
+.footer-contact{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.footer-contact a{display:inline-flex;align-items:center;min-height:44px;font-size:9px;color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.modal-actions{flex-wrap:wrap}
+.modal-actions>*{min-height:46px}
+@media(max-width:900px){.main-nav{display:none}.mobile-menu-toggle{display:block}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.printed-menu{grid-template-columns:.72fr 1.28fr}.hero{gap:28px}.hero-art-frame{height:415px}}
+@media(max-width:650px){.printed-menu{grid-template-columns:1fr;padding:16px}.printed-menu-copy{padding:4px}.printed-menu-copy h3{font-size:32px}.printed-menu-image{width:min(100%,390px)}.hero-art-frame{height:380px}.service-grid{grid-template-columns:1fr}.service-art{height:235px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-contact{gap:10px}.hero-stats{gap:16px;flex-wrap:wrap}.hero-stats strong{font-size:20px}}
