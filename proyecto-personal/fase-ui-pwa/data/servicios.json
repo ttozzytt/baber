@@ -15,7 +15,7 @@
   },
   {
     "id": "fade-premium",
-    "name": "Fade / Degradado",
+    "name": "Degradado",
     "category": "cabello",
     "description": "Transiciones precisas y contornos definidos.",
     "price": 45,
@@ -34,9 +34,13 @@
     "description": "Perfilado, simetría y cuidado de la barba.",
     "price": 25,
     "duration": 25,
-    "image": "./imagenes/barba.svg",
+    "image": "https://images.pexels.com/photos/7447145/pexels-photo-7447145.jpeg?auto=compress&cs=tinysrgb&w=900",
     "tag": "DETALLE",
-    "details": "Toalla tibia, perfilado de líneas y aceite acondicionador."
+    "details": "Toalla tibia, perfilado de líneas y aceite acondicionador.",
+    "imageAlt": "Barbero perfilando la barba de un cliente en primer plano",
+    "photoCredit": "Gustavo Fring",
+    "photoUrl": "https://www.pexels.com/photo/barber-trimming-beard-7447145/",
+    "fallbackImage": "./imagenes/barba.svg"
   },
   {
     "id": "corte-barba",
@@ -73,7 +77,7 @@
   },
   {
     "id": "fade-bajo",
-    "name": "Low fade",
+    "name": "Degradado bajo",
     "category": "cabello",
     "description": "Degradado bajo, discreto y limpio alrededor de la sien y nuca.",
     "price": 45,
@@ -87,7 +91,7 @@
   },
   {
     "id": "fade-medio",
-    "name": "Mid fade",
+    "name": "Degradado medio",
     "category": "cabello",
     "description": "Un degradado medio equilibrado que combina con distintos estilos.",
     "price": 45,
@@ -101,14 +105,14 @@
   },
   {
     "id": "taper-fade",
-    "name": "Taper fade",
+    "name": "Degradado en patillas y nuca",
     "category": "cabello",
     "description": "Laterales y nuca afinados con una transición natural.",
     "price": 45,
     "duration": 40,
     "image": "https://images.pexels.com/photos/6487911/pexels-photo-6487911.jpeg?auto=compress&cs=tinysrgb&w=900",
     "tag": "DETALLE",
-    "details": "Taper en patillas y nuca con acabado natural.",
+    "details": "Transición suave en patillas y nuca, con acabado natural.",
     "imageAlt": "Detalle de un corte corto con laterales difuminados",
     "photoCredit": "Matheus Wladeka",
     "photoUrl": "https://www.pexels.com/photo/mans-close-crop-hairstyle-6487911/"
@@ -162,9 +166,13 @@
     "description": "Líneas precisas para mantener la forma de tu barba.",
     "price": 25,
     "duration": 25,
-    "image": "./imagenes/barba.svg",
+    "image": "https://images.pexels.com/photos/7447145/pexels-photo-7447145.jpeg?auto=compress&cs=tinysrgb&w=900",
     "tag": "MANTENIMIENTO",
-    "details": "Perfilado de mejillas, cuello y simetría."
+    "details": "Perfilado de mejillas, cuello y simetría.",
+    "imageAlt": "Barbero perfilando la barba de un cliente en primer plano",
+    "photoCredit": "Gustavo Fring",
+    "photoUrl": "https://www.pexels.com/photo/barber-trimming-beard-7447145/",
+    "fallbackImage": "./imagenes/barba.svg"
   },
   {
     "id": "afeitado-clasico",
@@ -173,9 +181,13 @@
     "description": "Afeitado tradicional con preparación y cuidado de la piel.",
     "price": 30,
     "duration": 30,
-    "image": "./imagenes/barba.svg",
+    "image": "https://images.pexels.com/photos/7447145/pexels-photo-7447145.jpeg?auto=compress&cs=tinysrgb&w=900",
     "tag": "TRADICIONAL",
-    "details": "Preparación, afeitado cuidadoso y bálsamo final."
+    "details": "Preparación, afeitado cuidadoso y bálsamo final.",
+    "imageAlt": "Barbero perfilando la barba de un cliente en primer plano",
+    "photoCredit": "Gustavo Fring",
+    "photoUrl": "https://www.pexels.com/photo/barber-trimming-beard-7447145/",
+    "fallbackImage": "./imagenes/barba.svg"
   },
   {
     "id": "corte-lavado",

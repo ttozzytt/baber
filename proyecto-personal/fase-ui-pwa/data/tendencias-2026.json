@@ -1,7 +1,7 @@
 [
   {
     "id": "crop-texturizado-2026",
-    "name": "Crop texturizado",
+    "name": "Corte texturizado tipo crop",
     "tag": "MUY ACTUAL",
     "description": "Capas cortas y separadas en la parte superior, flequillo suave hacia delante y laterales con un taper bajo o medio. Se busca movimiento, no un acabado rígido.",
     "hairType": "Liso, ondulado o rizado",
@@ -17,13 +17,13 @@
   },
   {
     "id": "soft-taper-2026",
-    "name": "Low / Soft Taper",
+    "name": "Degradado bajo y suave",
     "tag": "ACABADO NATURAL",
     "description": "Transición gradual en patillas y nuca, manteniendo más peso en los laterales y longitud arriba. Es una opción limpia sin un contraste extremo.",
     "hairType": "Versátil: liso, ondulado y rizado",
     "maintenance": "Baja · crece de forma gradual",
     "bookingServiceId": "taper-fade",
-    "bookingServiceName": "Taper fade",
+    "bookingServiceName": "Degradado bajo",
     "image": "https://images.pexels.com/photos/29570984/pexels-photo-29570984.jpeg?cs=srgb&dl=pexels-fab-1110689274-29570984.jpg&fm=jpg",
     "photoCredit": "Fab (Fix-mood)",
     "photoUrl": "https://www.pexels.com/photo/stylish-man-with-modern-haircut-in-fashionable-attire-29570984/",
@@ -33,7 +33,7 @@
   },
   {
     "id": "mullet-suave-2026",
-    "name": "Soft Mullet",
+    "name": "Mullet moderno",
     "tag": "MÁS ATREVIDO",
     "description": "Una versión más llevable del mullet: capas con textura, laterales suavemente rebajados y algo de longitud en la nuca, sin líneas demasiado agresivas.",
     "hairType": "Liso, ondulado o rizado",
@@ -49,7 +49,7 @@
   },
   {
     "id": "close-crop-textura-2026",
-    "name": "Close Crop / Textura corta",
+    "name": "Corte corto texturizado",
     "tag": "CORTO Y LIMPIO",
     "description": "Corte corto con textura y laterales prolijos. Permite un mantenimiento práctico y un acabado limpio, ajustado al remolino y forma del cabello.",
     "hairType": "Cabello liso, ondulado o rizado corto",
@@ -62,5 +62,21 @@
     "imageAlt": "Detalle posterior de un corte close crop con textura",
     "trendSource": "Salon Magazine · A/W 2026",
     "trendSourceUrl": "https://www.salonmagazine.ca/a-w-2026-mens-hair-trends-4-mens-haircuts-and-styles-to-know/"
+  },
+  {
+    "id": "corte-rapado-2026",
+    "name": "Corte rapado",
+    "tag": "PRÁCTICO",
+    "description": "Largo muy corto y uniforme, con contornos definidos. Es una opción sencilla de mantener y se adapta al remolino y a la forma del cabello.",
+    "hairType": "Cabello liso, ondulado o rizado",
+    "maintenance": "Baja · retoques frecuentes para conservar el largo",
+    "bookingServiceId": "corte-clasico",
+    "bookingServiceName": "Corte clásico",
+    "image": "https://images.pexels.com/photos/18503633/pexels-photo-18503633.jpeg?cs=srgb&dl=pexels-hamidoffstudio-18503633.jpg&fm=jpg",
+    "photoCredit": "Rahib Hamidov",
+    "photoUrl": "https://www.pexels.com/pt-br/foto/homem-cabelo-pelo-barbeiro-18503633/",
+    "imageAlt": "Referencia de un corte masculino muy corto realizado en barbería",
+    "trendSource": "Referencia visual · Pexels",
+    "trendSourceUrl": "https://www.pexels.com/pt-br/foto/homem-cabelo-pelo-barbeiro-18503633/"
   }
 ]
