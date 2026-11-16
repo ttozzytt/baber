@@ -28,8 +28,8 @@ jobs:
           import { chromium } from 'playwright';
           import fs from 'node:fs/promises';
           const targets = [
-            { id:'barberia', url:'https://ttozzytt.github.io/baber/proyecto-personal/fase-ui-pwa/' },
-            { id:'veterinaria', url:'https://ttozzytt.github.io/Eventix/proyecto-grupal/fase-ui-pwa/' }
+            { id:'barberia', url:'https://ttozzytt.github.io/baber/proyecto-personal/fase-ui-pwa/pwa.html' },
+            { id:'veterinaria', url:'https://ttozzytt.github.io/Eventix/proyecto-grupal/fase-ui-pwa/pwa.html' }
           ];
           const viewports = [
             { id:'360x800', width:360, height:800, mobile:true },
@@ -50,7 +50,7 @@ jobs:
               page.on('pageerror', error=>errors.push(String(error)));
               await page.goto(target.url,{waitUntil:'domcontentloaded',timeout:90000});
               await page.waitForTimeout(3500);
-              await page.screenshot({path:`evidencias/${target.id}-${vp.id}-inicio.png`,fullPage:false});
+              await page.screenshot({path:`evidencias/${target.id}-${vp.id}-inicio-pwa.png`,fullPage:false});
               const layout = await page.evaluate(() => ({
                 viewportWidth:innerWidth, documentWidth:document.documentElement.scrollWidth,
                 horizontalOverflow:document.documentElement.scrollWidth>innerWidth,
@@ -60,12 +60,12 @@ jobs:
                 resourceStats:(()=>{const a=performance.getEntriesByType('resource');return {count:a.length,transferBytes:a.reduce((s,x)=>s+(x.transferSize||0),0),resources:a.map(x=>({name:x.name.split('/').pop().slice(0,90),durationMs:Math.round(x.duration),transferBytes:x.transferSize||0,type:x.initiatorType}))}})()
               }));
               summary.push({project:target.id,viewport:vp.id,...layout,pageErrors:errors});
-              const serviceLink=page.locator('a[href="#servicios"]').first();
+              const serviceLink=page.locator('a[href="#servicios"]:visible').first();
               if(await serviceLink.count()) {
                 try { await serviceLink.click({timeout:5000}); await page.waitForTimeout(900); await page.screenshot({path:`evidencias/${target.id}-${vp.id}-servicios.png`,fullPage:false}); } catch {}
               }
               if(target.id==='barberia') {
-                const bookingLink=page.locator('a[href="#reservar"]').first();
+                const bookingLink=page.locator('a[href="#reservar"]:visible').first();
                 if(await bookingLink.count()) {
                   try { await bookingLink.click({timeout:5000}); await page.waitForTimeout(800); const field=page.locator('#ownerName, #ownerNameInput, input[type="text"]').first(); if(await field.count()) await field.focus(); await page.screenshot({path:`evidencias/barberia-${vp.id}-formulario-enfoque.png`,fullPage:false}); } catch {}
                 }
