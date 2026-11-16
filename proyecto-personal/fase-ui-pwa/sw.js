@@ -18,9 +18,9 @@ const APP_SHELL = [
   "./imagenes/barba.svg",
   "./imagenes/combo.svg",
   "./imagenes/corte.svg",
-  "./imagenes/fade.svg",
-  "./imagenes/hero-chair.svg",
-  "./imagenes/kids.svg"
+  "./imagenes/degradado.svg",
+  "./imagenes/portada-barberia.svg",
+  "./imagenes/corte-infantil.svg"
 ];
 const JQUERY_CDN = "https://code.jquery.com/jquery-3.7.1.min.js";
 

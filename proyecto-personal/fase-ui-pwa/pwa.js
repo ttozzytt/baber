@@ -294,7 +294,7 @@
     $(document).on('keydown.navaja27',function(event){if(event.key==='Escape' && $modal.hasClass('open'))closeModal();});
   }
   function bindPhotoFallbacks() {
-    const pairs = [['.hero-art-frame img','./imagenes/hero-chair.svg'],['.brow-feature-grid article:nth-child(1) img','./imagenes/barba.svg'],['.brow-feature-grid article:nth-child(2) img','./imagenes/corte.svg']];
+    const pairs = [['.hero-art-frame img','./imagenes/portada-barberia.svg'],['.brow-feature-grid article:nth-child(1) img','./imagenes/barba.svg'],['.brow-feature-grid article:nth-child(2) img','./imagenes/corte.svg']];
     pairs.forEach(([selector,fallback]) => { const img=document.querySelector(selector); if(img){ const useFallback=()=>{ if(img.dataset.fallbackApplied==='true')return; img.dataset.fallbackApplied='true'; img.src=fallback; img.classList.add('service-image-fallback'); }; img.addEventListener('error',useFallback,{once:true}); if(img.complete&&img.naturalWidth===0)useFallback(); } });
   }
   function init() {

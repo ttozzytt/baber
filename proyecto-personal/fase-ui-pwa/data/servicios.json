@@ -56,7 +56,7 @@
     "description": "Un corte cómodo y paciente para los más pequeños.",
     "price": 30,
     "duration": 30,
-    "image": "./imagenes/kids.svg",
+    "image": "./imagenes/corte-infantil.svg",
     "tag": "FAMILIA",
     "details": "Atención paciente, corte a elección y acabado suave."
   },
