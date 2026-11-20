@@ -7,12 +7,10 @@
     "price": 25,
     "priceLabel": "Bs 25",
     "duration": 35,
-    "image": "https://images.pexels.com/photos/27467943/pexels-photo-27467943.jpeg",
+    "image": "./imagenes/barber-hero.webp",
     "tag": "CORTES MODERNOS",
     "details": "Corte clásico con asesoría de largo y acabado limpio. Se define el estilo contigo antes de empezar.",
-    "imageAlt": "Referencia de un corte masculino moderno con laterales degradados",
-    "photoCredit": "Clark Enzzo",
-    "photoUrl": "https://www.pexels.com/photo/barber-shop-27467943/"
+    "imageAlt": "Imagen ilustrativa de un corte y acabado de barbería."
   },
   {
     "id": "corte-degradados",
@@ -22,12 +20,10 @@
     "price": 30,
     "priceLabel": "Bs 30",
     "duration": 45,
-    "image": "https://images.pexels.com/photos/29570984/pexels-photo-29570984.jpeg",
+    "image": "./imagenes/corte-degradado.webp",
     "tag": "CORTES MODERNOS",
     "details": "Puedes consultar por el degradado que prefieres y acordar la transición y el largo superior antes del corte.",
-    "imageAlt": "Referencia de un degradado con cabello largo recogido en la parte superior",
-    "photoCredit": "Fab (Fix-mood)",
-    "photoUrl": "https://www.pexels.com/photo/29570984/"
+    "imageAlt": "Imagen ilustrativa de un corte con degradado."
   },
   {
     "id": "corte-infantil",
@@ -37,12 +33,10 @@
     "price": 20,
     "priceLabel": "Bs 20",
     "duration": 30,
-    "image": "https://images.pexels.com/photos/7697363/pexels-photo-7697363.jpeg",
+    "image": "./imagenes/corte-infantil.webp",
     "tag": "CORTES MODERNOS",
     "details": "El estilo y el largo se coordinan con el acompañante, cuidando que la experiencia sea cómoda para el niño.",
-    "imageAlt": "Niño en una barbería durante un corte de cabello",
-    "photoCredit": "RDNE Stock project",
-    "photoUrl": "https://www.pexels.com/photo/boy-inside-the-barbershop-7697363/"
+    "imageAlt": "Referencia de corte infantil"
   },
   {
     "id": "barba-mas-diseno",
@@ -52,12 +46,10 @@
     "price": 25,
     "priceLabel": "Bs 25",
     "duration": 30,
-    "image": "https://images.pexels.com/photos/7447145/pexels-photo-7447145.jpeg",
+    "image": "./imagenes/barba-diseno.webp",
     "tag": "BARBA & DISEÑO",
     "details": "Incluye perfilado y definición de contornos de acuerdo con la forma que elijas.",
-    "imageAlt": "Perfilado de barba realizado con máquina de precisión",
-    "photoCredit": "Gustavo Fring",
-    "photoUrl": "https://www.pexels.com/photo/7447145/"
+    "imageAlt": "Barbero perfilando una barba"
   },
   {
     "id": "corte-mas-barba",
@@ -67,12 +59,10 @@
     "price": 50,
     "priceLabel": "Bs 50",
     "duration": 65,
-    "image": "https://images.pexels.com/photos/7781844/pexels-photo-7781844.jpeg",
+    "image": "./imagenes/corte-barba.webp",
     "tag": "BARBA & DISEÑO",
     "details": "Combina el corte de cabello y el perfilado de barba para conseguir un acabado coordinado.",
-    "imageAlt": "Barbero trabajando el corte de cabello de un cliente",
-    "photoCredit": "Leonardo Hidalgo",
-    "photoUrl": "https://www.pexels.com/photo/7781844/"
+    "imageAlt": "Imagen ilustrativa de un servicio combinado de cabello y barba."
   },
   {
     "id": "experiencia-vip",
@@ -82,12 +72,10 @@
     "price": null,
     "priceLabel": "Consultar",
     "duration": 75,
-    "image": "https://images.pexels.com/photos/7447130/pexels-photo-7447130.jpeg",
+    "image": "./imagenes/experiencia-vip.webp",
     "tag": "EXPERIENCIA VIP",
     "details": "Cuidado premium, toalla caliente y más. Consulta con el estudio los detalles y la disponibilidad de esta experiencia.",
-    "imageAlt": "Lavado de cabello en lavacabezas de barbería",
-    "photoCredit": "Gustavo Fring",
-    "photoUrl": "https://www.pexels.com/photo/man-having-his-hair-washed-in-a-hair-salon-7447130/"
+    "imageAlt": "Imagen ilustrativa de la experiencia premium de Navaja 27."
   },
   {
     "id": "perfilado-cejas",
@@ -97,12 +85,10 @@
     "price": 25,
     "priceLabel": "Bs 25",
     "duration": 20,
-    "image": "https://images.pexels.com/photos/8558244/pexels-photo-8558244.jpeg",
+    "image": "./imagenes/cejas-hilo.webp",
     "tag": "SERVICIOS DE CEJAS",
     "details": "Trabajo de precisión con hilo para retirar vello fino y mantener la forma natural de la ceja.",
-    "imageAlt": "Depilación de cejas con hilo",
-    "photoCredit": "Nataliya Vaitkevich",
-    "photoUrl": "https://www.pexels.com/photo/8558244/"
+    "imageAlt": "Depilación de cejas con hilo"
   },
   {
     "id": "diseno-cejas",
@@ -112,11 +98,9 @@
     "price": 20,
     "priceLabel": "Bs 20",
     "duration": 25,
-    "image": "https://images.pexels.com/photos/6135624/pexels-photo-6135624.jpeg",
+    "image": "./imagenes/cejas-diseno.webp",
     "tag": "SERVICIOS DE CEJAS",
     "details": "Se define el contorno y la forma de las cejas de acuerdo con el rostro y la preferencia del cliente.",
-    "imageAlt": "Perfilación de cejas con pinza",
-    "photoCredit": "Gabriel Puyén",
-    "photoUrl": "https://www.pexels.com/photo/6135624/"
+    "imageAlt": "Ejemplo de perfilación y diseño de cejas"
   }
 ]
