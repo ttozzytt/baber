@@ -37,10 +37,12 @@
     "price": 20,
     "priceLabel": "Bs 20",
     "duration": 30,
-    "image": "./imagenes/corte-infantil.webp",
+    "image": "https://images.pexels.com/photos/7697363/pexels-photo-7697363.jpeg",
     "tag": "CORTES MODERNOS",
     "details": "El estilo y el largo se coordinan con el acompañante, cuidando que la experiencia sea cómoda para el niño.",
-    "imageAlt": "Referencia de corte infantil"
+    "imageAlt": "Niño en una barbería durante un corte de cabello",
+    "photoCredit": "RDNE Stock project",
+    "photoUrl": "https://www.pexels.com/photo/boy-inside-the-barbershop-7697363/"
   },
   {
     "id": "barba-mas-diseno",
