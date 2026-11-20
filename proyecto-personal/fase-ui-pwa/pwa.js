@@ -61,6 +61,7 @@
         $image.appendTo($art);
         $('<span>').addClass('service-tag').text(service.tag).appendTo($art);
         const $body = $('<div>').addClass('service-body');
+        if(service.photoUrl && service.photoCredit){ const $credit=$('<a>').addClass('trend-credits').attr({href:service.photoUrl,target:'_blank',rel:'noopener noreferrer'}).text(`Foto: ${service.photoCredit} · Pexels ↗`); $body.append($credit); }
         const $meta = $('<div>').addClass('service-meta');
         $('<span>').text(service.category.toUpperCase()).appendTo($meta);
         $('<span>').text(`${service.duration} MIN`).appendTo($meta);
