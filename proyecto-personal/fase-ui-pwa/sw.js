@@ -1,7 +1,7 @@
 'use strict';
 // Service Worker PWA Offline-First para Navaja 27.
 // Guarda las dos pantallas, los estilos, scripts, iconos, datos y recursos visuales locales.
-const CACHE_NAME = "navaja27-barber-v12-original-photos-20261120";
+const CACHE_NAME = "navaja27-barber-v11-mobile-first-c3-a1";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -65,20 +65,7 @@ self.addEventListener('fetch', event => {
   const url = new URL(request.url);
   const sameOrigin = url.origin === self.location.origin;
   if (url.searchParams.has("__n27_health")) { event.respondWith(fetch(request)); return; }
-  if (!sameOrigin) {
-    if (request.destination !== 'image') return;
-    event.respondWith((async () => {
-      const cache = await caches.open(CACHE_NAME);
-      const saved = await cache.match(request);
-      if (saved) return saved;
-      try {
-        const live = await fetch(request);
-        if (live.ok || live.type === 'opaque') await cache.put(request, live.clone());
-        return live;
-      } catch (_) { return saved || Response.error(); }
-    })());
-    return;
-  }
+  if (!sameOrigin) return;
 
   if (request.mode === 'navigate') {
     event.respondWith((async () => {
