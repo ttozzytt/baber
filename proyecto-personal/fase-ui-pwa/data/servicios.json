@@ -7,10 +7,10 @@
     "price": 25,
     "priceLabel": "Bs 25",
     "duration": 35,
-    "image": "./imagenes/corte-buzz-fade.webp",
+    "image": "./imagenes/barber-hero.webp",
     "tag": "CORTES MODERNOS",
     "details": "Corte clásico con asesoría de largo y acabado limpio. Se define el estilo contigo antes de empezar.",
-    "imageAlt": "Corte masculino clásico"
+    "imageAlt": "Imagen ilustrativa de un corte y acabado de barbería."
   },
   {
     "id": "corte-degradados",
@@ -20,10 +20,10 @@
     "price": 30,
     "priceLabel": "Bs 30",
     "duration": 45,
-    "image": "./imagenes/corte-taper-fade.webp",
+    "image": "./imagenes/corte-degradado.webp",
     "tag": "CORTES MODERNOS",
     "details": "Puedes consultar por el degradado que prefieres y acordar la transición y el largo superior antes del corte.",
-    "imageAlt": "Barbero trabajando un corte con degradado"
+    "imageAlt": "Imagen ilustrativa de un corte con degradado."
   },
   {
     "id": "corte-infantil",
@@ -59,10 +59,10 @@
     "price": 50,
     "priceLabel": "Bs 50",
     "duration": 65,
-    "image": "./imagenes/corte-mod-cut.webp",
+    "image": "./imagenes/corte-barba.webp",
     "tag": "BARBA & DISEÑO",
     "details": "Combina el corte de cabello y el perfilado de barba para conseguir un acabado coordinado.",
-    "imageAlt": "Servicio de corte y arreglo de barba"
+    "imageAlt": "Imagen ilustrativa de un servicio combinado de cabello y barba."
   },
   {
     "id": "experiencia-vip",
@@ -72,10 +72,10 @@
     "price": null,
     "priceLabel": "Consultar",
     "duration": 75,
-    "image": "./imagenes/lavado-capilar.webp",
+    "image": "./imagenes/experiencia-vip.webp",
     "tag": "EXPERIENCIA VIP",
     "details": "Cuidado premium, toalla caliente y más. Consulta con el estudio los detalles y la disponibilidad de esta experiencia.",
-    "imageAlt": "Servicio premium de barbería"
+    "imageAlt": "Imagen ilustrativa de la experiencia premium de Navaja 27."
   },
   {
     "id": "perfilado-cejas",
