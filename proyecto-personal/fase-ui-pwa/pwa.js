@@ -384,3 +384,18 @@
   const initial=findView(location.hash);showView(initial||views[0]);
 })();
 
+
+
+/* Demostración de grilla solicitada en la Guía Práctica Parte 2. */
+(() => {
+  const button = document.getElementById('btnSimularVista');
+  const grid = document.getElementById('serviceGrid');
+  if (!button || !grid) return;
+  button.addEventListener('click', () => {
+    const compact = grid.classList.toggle('sim-movil');
+    button.setAttribute('aria-pressed', String(compact));
+    button.textContent = compact
+      ? 'Volver a vista adaptable'
+      : 'Simular Vista Móvil / Escritorio';
+  });
+})();
