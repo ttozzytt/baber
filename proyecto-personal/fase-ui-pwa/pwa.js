@@ -120,7 +120,7 @@
       $('<span>').text(`Cabello: ${trend.hairType}`).appendTo($facts);
       $('<span>').text(`Mantenimiento: ${trend.maintenance}`).appendTo($facts);
       $facts.appendTo($body);
-      const $credits=$('<div>').addClass('trend-credits'); $('<span>').text('Referencia visual del catálogo Navaja 27').appendTo($credits); $credits.appendTo($body);
+      const $credits=$('<div>').addClass('trend-credits'); $('<span>').text(trend.photoCredit ? `Foto: ${trend.photoCredit} · Pexels` : 'Referencia visual del catálogo Navaja 27').appendTo($credits); if(trend.photoUrl){ $('<a>').attr({href:trend.photoUrl,target:'_blank',rel:'noopener noreferrer'}).text('Ver fotografía original ↗').appendTo($credits); } $credits.appendTo($body);
       const $action = $('<button>').addClass('button button-dark trend-action').attr({'type':'button','data-trend-service':trend.bookingServiceId}).text(`Consultar como ${trend.bookingServiceName} ↗`);
       $action.appendTo($body);
       $card.append($art,$body);
