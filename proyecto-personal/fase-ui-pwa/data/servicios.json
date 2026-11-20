@@ -7,10 +7,12 @@
     "price": 25,
     "priceLabel": "Bs 25",
     "duration": 35,
-    "image": "./imagenes/barber-hero.webp",
+    "image": "https://images.pexels.com/photos/27467943/pexels-photo-27467943.jpeg",
     "tag": "CORTES MODERNOS",
     "details": "Corte clásico con asesoría de largo y acabado limpio. Se define el estilo contigo antes de empezar.",
-    "imageAlt": "Imagen ilustrativa de un corte y acabado de barbería."
+    "imageAlt": "Referencia de un corte masculino moderno con laterales degradados",
+    "photoCredit": "Clark Enzzo",
+    "photoUrl": "https://www.pexels.com/photo/barber-shop-27467943/"
   },
   {
     "id": "corte-degradados",
@@ -20,10 +22,12 @@
     "price": 30,
     "priceLabel": "Bs 30",
     "duration": 45,
-    "image": "./imagenes/corte-degradado.webp",
+    "image": "https://images.pexels.com/photos/29570984/pexels-photo-29570984.jpeg",
     "tag": "CORTES MODERNOS",
     "details": "Puedes consultar por el degradado que prefieres y acordar la transición y el largo superior antes del corte.",
-    "imageAlt": "Imagen ilustrativa de un corte con degradado."
+    "imageAlt": "Referencia de un degradado con cabello largo recogido en la parte superior",
+    "photoCredit": "Fab (Fix-mood)",
+    "photoUrl": "https://www.pexels.com/photo/29570984/"
   },
   {
     "id": "corte-infantil",
@@ -46,10 +50,12 @@
     "price": 25,
     "priceLabel": "Bs 25",
     "duration": 30,
-    "image": "./imagenes/barba-diseno.webp",
+    "image": "https://images.pexels.com/photos/7447145/pexels-photo-7447145.jpeg",
     "tag": "BARBA & DISEÑO",
     "details": "Incluye perfilado y definición de contornos de acuerdo con la forma que elijas.",
-    "imageAlt": "Barbero perfilando una barba"
+    "imageAlt": "Perfilado de barba realizado con máquina de precisión",
+    "photoCredit": "Gustavo Fring",
+    "photoUrl": "https://www.pexels.com/photo/7447145/"
   },
   {
     "id": "corte-mas-barba",
@@ -59,10 +65,12 @@
     "price": 50,
     "priceLabel": "Bs 50",
     "duration": 65,
-    "image": "./imagenes/corte-barba.webp",
+    "image": "https://images.pexels.com/photos/7781844/pexels-photo-7781844.jpeg",
     "tag": "BARBA & DISEÑO",
     "details": "Combina el corte de cabello y el perfilado de barba para conseguir un acabado coordinado.",
-    "imageAlt": "Imagen ilustrativa de un servicio combinado de cabello y barba."
+    "imageAlt": "Barbero trabajando el corte de cabello de un cliente",
+    "photoCredit": "Leonardo Hidalgo",
+    "photoUrl": "https://www.pexels.com/photo/7781844/"
   },
   {
     "id": "experiencia-vip",
@@ -72,10 +80,12 @@
     "price": null,
     "priceLabel": "Consultar",
     "duration": 75,
-    "image": "./imagenes/experiencia-vip.webp",
+    "image": "https://images.pexels.com/photos/7447130/pexels-photo-7447130.jpeg",
     "tag": "EXPERIENCIA VIP",
     "details": "Cuidado premium, toalla caliente y más. Consulta con el estudio los detalles y la disponibilidad de esta experiencia.",
-    "imageAlt": "Imagen ilustrativa de la experiencia premium de Navaja 27."
+    "imageAlt": "Lavado de cabello en lavacabezas de barbería",
+    "photoCredit": "Gustavo Fring",
+    "photoUrl": "https://www.pexels.com/photo/man-having-his-hair-washed-in-a-hair-salon-7447130/"
   },
   {
     "id": "perfilado-cejas",
@@ -85,10 +95,12 @@
     "price": 25,
     "priceLabel": "Bs 25",
     "duration": 20,
-    "image": "./imagenes/cejas-hilo.webp",
+    "image": "https://images.pexels.com/photos/8558244/pexels-photo-8558244.jpeg",
     "tag": "SERVICIOS DE CEJAS",
     "details": "Trabajo de precisión con hilo para retirar vello fino y mantener la forma natural de la ceja.",
-    "imageAlt": "Depilación de cejas con hilo"
+    "imageAlt": "Depilación de cejas con hilo",
+    "photoCredit": "Nataliya Vaitkevich",
+    "photoUrl": "https://www.pexels.com/photo/8558244/"
   },
   {
     "id": "diseno-cejas",
@@ -98,9 +110,11 @@
     "price": 20,
     "priceLabel": "Bs 20",
     "duration": 25,
-    "image": "./imagenes/cejas-diseno.webp",
+    "image": "https://images.pexels.com/photos/6135624/pexels-photo-6135624.jpeg",
     "tag": "SERVICIOS DE CEJAS",
     "details": "Se define el contorno y la forma de las cejas de acuerdo con el rostro y la preferencia del cliente.",
-    "imageAlt": "Ejemplo de perfilación y diseño de cejas"
+    "imageAlt": "Perfilación de cejas con pinza",
+    "photoCredit": "Gabriel Puyén",
+    "photoUrl": "https://www.pexels.com/photo/6135624/"
   }
 ]
