@@ -333,3 +333,17 @@ body{min-width:320px;overflow-x:hidden}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
+
+/* Fotografías originales: se muestran nítidas, sin ampliación por encima de su fuente. */
+.hero-art-frame{overflow:hidden}
+.hero-art-frame img{width:100%;height:100%;object-fit:cover!important;object-position:center 35%;image-rendering:auto}
+.service-art{height:230px!important;min-height:230px!important;overflow:hidden}
+.service-art img{width:100%;height:100%;object-fit:cover!important;object-position:center 35%;background:transparent!important}
+.trend-art{height:auto;aspect-ratio:4/5;max-height:360px;overflow:hidden}
+.trend-art img{width:100%;height:100%;object-fit:cover!important;object-position:center 35%;background:transparent!important}
+.brow-feature-grid img{width:100%;height:220px;object-fit:cover!important;object-position:center 35%}
+@media(max-width:640px){
+  .service-art{height:220px!important;min-height:220px!important}
+  .trend-art{max-height:340px}
+  .hero-art-frame img{object-position:center 28%}
+}
