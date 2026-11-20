@@ -8,8 +8,8 @@
     "maintenance": "Retoques frecuentes para conservar el degradado",
     "bookingServiceId": "corte-clasico",
     "bookingServiceName": "Corte clásico",
-    "image": "./imagenes/corte-buzz-fade.webp",
-    "imageAlt": "Referencia de Buzz Cut Fade con laterales degradados"
+    "image": "./imagenes/corte-degradado.webp",
+    "imageAlt": "Imagen ilustrativa de un corte corto con degradado."
   },
   {
     "id": "mohicano-texturizado",
@@ -20,8 +20,8 @@
     "maintenance": "Definir laterales y contorno según crecimiento",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "./imagenes/corte-mohicano-texturizado.webp",
-    "imageAlt": "Vista posterior de un corte texturizado con laterales cortos"
+    "image": "./imagenes/barber-working.webp",
+    "imageAlt": "Imagen ilustrativa del trabajo de barbería y textura del corte."
   },
   {
     "id": "taper-fade",
@@ -32,8 +32,8 @@
     "maintenance": "Retoque de contornos según crecimiento",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "./imagenes/corte-taper-fade.webp",
-    "imageAlt": "Referencia lateral de Taper Fade con textura superior"
+    "image": "./imagenes/degradado.svg",
+    "imageAlt": "Ilustración de referencia de una transición degradada."
   },
   {
     "id": "mod-cut",
@@ -44,8 +44,8 @@
     "maintenance": "Mantener forma y capas",
     "bookingServiceId": "corte-clasico",
     "bookingServiceName": "Corte clásico",
-    "image": "./imagenes/corte-mod-cut.webp",
-    "imageAlt": "Referencia de Mod Cut con cabello medio y textura"
+    "image": "./imagenes/barber-hero.webp",
+    "imageAlt": "Imagen ilustrativa de un estilo de cabello trabajado en barbería."
   },
   {
     "id": "mullet",
@@ -56,8 +56,8 @@
     "maintenance": "Definir contornos y mantener la forma posterior",
     "bookingServiceId": "corte-clasico",
     "bookingServiceName": "Corte clásico",
-    "image": "./imagenes/corte-mullet.webp",
-    "imageAlt": "Referencia de corte Mullet"
+    "image": "./imagenes/corte-barba.webp",
+    "imageAlt": "Imagen ilustrativa del servicio de corte y acabado de Navaja 27."
   },
   {
     "id": "detalle-degradado",
@@ -68,8 +68,8 @@
     "maintenance": "Revisar la transición al crecer",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "./imagenes/detalle-degradado-nuca.webp",
-    "imageAlt": "Detalle de transición de degradado en la nuca"
+    "image": "./imagenes/degradado.svg",
+    "imageAlt": "Ilustración de referencia del detalle de un degradado."
   },
   {
     "id": "tecnica-maquina",
@@ -80,8 +80,8 @@
     "maintenance": "Depende del degradado elegido",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "./imagenes/tecnica-degradado-maquina.webp",
-    "imageAlt": "Barbero trabajando con máquina en la nuca de un cliente"
+    "image": "./imagenes/barber-working.webp",
+    "imageAlt": "Imagen ilustrativa del proceso de trabajo en barbería."
   },
   {
     "id": "lavado-capilar",
@@ -92,7 +92,7 @@
     "maintenance": "Consultar detalles de la Experiencia VIP",
     "bookingServiceId": "experiencia-vip",
     "bookingServiceName": "Experiencia VIP",
-    "image": "./imagenes/lavado-capilar.webp",
-    "imageAlt": "Lavado de cabello en lavacabezas de barbería"
+    "image": "./imagenes/experiencia-vip.webp",
+    "imageAlt": "Imagen ilustrativa de la experiencia de atención en el estudio."
   }
 ]
