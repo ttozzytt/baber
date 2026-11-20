@@ -8,10 +8,8 @@
     "maintenance": "Retoques frecuentes para conservar el degradado",
     "bookingServiceId": "corte-clasico",
     "bookingServiceName": "Corte clásico",
-    "image": "https://images.pexels.com/photos/27467943/pexels-photo-27467943.jpeg",
-    "imageAlt": "Perfil de un corte corto moderno con laterales degradados",
-    "photoCredit": "Clark Enzzo",
-    "photoUrl": "https://www.pexels.com/photo/barber-shop-27467943/"
+    "image": "./imagenes/corte-degradado.webp",
+    "imageAlt": "Imagen ilustrativa de un corte corto con degradado."
   },
   {
     "id": "mohicano-texturizado",
@@ -22,10 +20,8 @@
     "maintenance": "Definir laterales y contorno según crecimiento",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "https://images.pexels.com/photos/6487890/pexels-photo-6487890.jpeg",
-    "imageAlt": "Trabajo de corte y textura en una barbería",
-    "photoCredit": "Matheus Wladeka",
-    "photoUrl": "https://www.pexels.com/photo/6487890/"
+    "image": "./imagenes/barber-working.webp",
+    "imageAlt": "Imagen ilustrativa del trabajo de barbería y textura del corte."
   },
   {
     "id": "taper-fade",
@@ -36,10 +32,8 @@
     "maintenance": "Retoque de contornos según crecimiento",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "https://images.pexels.com/photos/29570984/pexels-photo-29570984.jpeg",
-    "imageAlt": "Referencia de Taper Fade con laterales rebajados",
-    "photoCredit": "Fab (Fix-mood)",
-    "photoUrl": "https://www.pexels.com/photo/29570984/"
+    "image": "./imagenes/degradado.svg",
+    "imageAlt": "Ilustración de referencia de una transición degradada."
   },
   {
     "id": "mod-cut",
@@ -50,10 +44,8 @@
     "maintenance": "Mantener forma y capas",
     "bookingServiceId": "corte-clasico",
     "bookingServiceName": "Corte clásico",
-    "image": "https://images.pexels.com/photos/6487882/pexels-photo-6487882.jpeg",
-    "imageAlt": "Cabello masculino de longitud media durante un corte",
-    "photoCredit": "Matheus Wladeka",
-    "photoUrl": "https://www.pexels.com/photo/6487882/"
+    "image": "./imagenes/barber-hero.webp",
+    "imageAlt": "Imagen ilustrativa de un estilo de cabello trabajado en barbería."
   },
   {
     "id": "mullet",
@@ -64,10 +56,8 @@
     "maintenance": "Definir contornos y mantener la forma posterior",
     "bookingServiceId": "corte-clasico",
     "bookingServiceName": "Corte clásico",
-    "image": "https://images.pexels.com/photos/11395987/pexels-photo-11395987.jpeg",
-    "imageAlt": "Referencia de corte Mullet con mayor longitud posterior",
-    "photoCredit": "Ann Mteu",
-    "photoUrl": "https://www.pexels.com/photo/11395987/"
+    "image": "./imagenes/corte-barba.webp",
+    "imageAlt": "Imagen ilustrativa del servicio de corte y acabado de Navaja 27."
   },
   {
     "id": "detalle-degradado",
@@ -78,10 +68,8 @@
     "maintenance": "Revisar la transición al crecer",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "https://images.pexels.com/photos/6487911/pexels-photo-6487911.jpeg",
-    "imageAlt": "Detalle de una transición degradada en el cabello",
-    "photoCredit": "Matheus Wladeka",
-    "photoUrl": "https://www.pexels.com/photo/mans-close-crop-hairstyle-6487911/"
+    "image": "./imagenes/degradado.svg",
+    "imageAlt": "Ilustración de referencia del detalle de un degradado."
   },
   {
     "id": "tecnica-maquina",
@@ -92,10 +80,8 @@
     "maintenance": "Depende del degradado elegido",
     "bookingServiceId": "corte-degradados",
     "bookingServiceName": "Corte con degradados",
-    "image": "https://images.pexels.com/photos/7781844/pexels-photo-7781844.jpeg",
-    "imageAlt": "Barbero trabajando con máquina durante un corte",
-    "photoCredit": "Leonardo Hidalgo",
-    "photoUrl": "https://www.pexels.com/photo/7781844/"
+    "image": "./imagenes/barber-working.webp",
+    "imageAlt": "Imagen ilustrativa del proceso de trabajo en barbería."
   },
   {
     "id": "lavado-capilar",
@@ -106,9 +92,7 @@
     "maintenance": "Consultar detalles de la Experiencia VIP",
     "bookingServiceId": "experiencia-vip",
     "bookingServiceName": "Experiencia VIP",
-    "image": "https://images.pexels.com/photos/7447130/pexels-photo-7447130.jpeg",
-    "imageAlt": "Lavado capilar en un lavacabezas de barbería",
-    "photoCredit": "Gustavo Fring",
-    "photoUrl": "https://www.pexels.com/photo/man-having-his-hair-washed-in-a-hair-salon-7447130/"
+    "image": "./imagenes/experiencia-vip.webp",
+    "imageAlt": "Imagen ilustrativa de la experiencia de atención en el estudio."
   }
 ]
