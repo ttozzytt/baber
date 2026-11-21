@@ -1,0 +1,1 @@
+(()=>{document.getElementById('safeForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('safeOutput').textContent='Texto plano: '+document.getElementById('safeName').value.trim();});})();

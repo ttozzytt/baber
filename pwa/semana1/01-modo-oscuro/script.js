@@ -1,0 +1,1 @@
+(()=>{const b=document.getElementById('themeToggle'),s=document.getElementById('themeStatus');b?.addEventListener('click',()=>{const r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;localStorage.setItem('navaja-theme',n);s.textContent='Tema '+n;});})();

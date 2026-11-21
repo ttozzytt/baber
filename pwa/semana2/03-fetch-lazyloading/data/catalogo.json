@@ -1,0 +1,130 @@
+[
+  {
+    "id": "corte-clasico",
+    "name": "Corte clásico",
+    "category": "cabello",
+    "description": "Corte tradicional con laterales limpios y acabado acorde al estilo que elijas.",
+    "priceLabel": "Bs 25",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/barber-hero.webp"
+  },
+  {
+    "id": "corte-degradados",
+    "name": "Corte con degradados",
+    "category": "cabello",
+    "description": "Transición progresiva en laterales y nuca, con definición en la parte superior.",
+    "priceLabel": "Bs 30",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/corte-degradado.webp"
+  },
+  {
+    "id": "corte-infantil",
+    "name": "Corte infantil",
+    "category": "cabello",
+    "description": "Corte para niños, con atención tranquila y un acabado cómodo.",
+    "priceLabel": "Bs 20",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/corte-infantil.webp"
+  },
+  {
+    "id": "barba-mas-diseno",
+    "name": "Barba más diseño",
+    "category": "barba",
+    "description": "Perfilado de barba y definición de líneas para mantener su forma.",
+    "priceLabel": "Bs 25",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/barba-diseno.webp"
+  },
+  {
+    "id": "corte-mas-barba",
+    "name": "Corte más barba",
+    "category": "combos",
+    "description": "Servicio combinado de cabello y barba en una sola visita.",
+    "priceLabel": "Bs 50",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/corte-barba.webp"
+  },
+  {
+    "id": "experiencia-vip",
+    "name": "Experiencia VIP",
+    "category": "combos",
+    "description": "Cuidado premium, toalla caliente y detalles especiales para una visita diferente.",
+    "priceLabel": "Consultar",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/experiencia-vip.webp"
+  },
+  {
+    "id": "perfilado-cejas",
+    "name": "Depilación con hilo",
+    "category": "cejas",
+    "description": "Depilación con hilo para definir y limpiar el contorno de las cejas.",
+    "priceLabel": "Bs 25",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/cejas-hilo.webp"
+  },
+  {
+    "id": "diseno-cejas",
+    "name": "Perfilación y diseño",
+    "category": "cejas",
+    "description": "Perfilación y diseño de cejas adaptados a la forma del rostro.",
+    "priceLabel": "Bs 20",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/cejas-diseno.webp"
+  },
+  {
+    "id": "buzz-cut-fade",
+    "name": "Buzz Cut Fade",
+    "category": "tendencia",
+    "description": "Un corte corto con laterales degradados y un acabado limpio. Referencia visual para conversar el largo y la transición.",
+    "priceLabel": "Referencia de estilo",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/corte-degradado.webp"
+  },
+  {
+    "id": "mohicano-texturizado",
+    "name": "Mohicano texturizado",
+    "category": "tendencia",
+    "description": "Volumen y textura en la parte superior, con laterales más cortos. Ajusta la altura y el contraste según tu preferencia.",
+    "priceLabel": "Referencia de estilo",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/barber-working.webp"
+  },
+  {
+    "id": "taper-fade",
+    "name": "Taper Fade",
+    "category": "tendencia",
+    "description": "Transición gradual alrededor de patillas y nuca, manteniendo longitud y textura en la parte superior.",
+    "priceLabel": "Referencia de estilo",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/degradado.svg"
+  },
+  {
+    "id": "mod-cut",
+    "name": "Mod Cut",
+    "category": "tendencia",
+    "description": "Capas y movimiento alrededor de la cabeza, con flequillo y laterales de longitud media.",
+    "priceLabel": "Referencia de estilo",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/barber-hero.webp"
+  },
+  {
+    "id": "mullet",
+    "name": "Mullet",
+    "category": "tendencia",
+    "description": "Contraste entre laterales más cortos y longitud en la parte posterior. El largo se puede adaptar al estilo buscado.",
+    "priceLabel": "Referencia de estilo",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/corte-barba.webp"
+  },
+  {
+    "id": "detalle-degradado",
+    "name": "Detalle de degradado",
+    "category": "tendencia",
+    "description": "Un acercamiento a la transición del degradado. La altura y el contraste se conversan antes de cortar.",
+    "priceLabel": "Referencia de estilo",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/degradado.svg"
+  },
+  {
+    "id": "tecnica-maquina",
+    "name": "Trabajo con máquina",
+    "category": "tendencia",
+    "description": "Referencia del trabajo de máquina y definición de contornos durante un corte.",
+    "priceLabel": "Referencia de estilo",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/barber-working.webp"
+  },
+  {
+    "id": "lavado-capilar",
+    "name": "Lavado capilar",
+    "category": "tendencia",
+    "description": "Referencia visual del lavado previo o posterior al corte. Consulta con el estudio si este paso está incluido en la experiencia que elijas.",
+    "priceLabel": "Referencia de estilo",
+    "image": "../../../proyecto-personal/fase-ui-pwa/imagenes/experiencia-vip.webp"
+  }
+]
