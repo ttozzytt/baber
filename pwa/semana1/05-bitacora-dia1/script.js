@@ -1,1 +1,0 @@
-(()=>{const i=document.getElementById('logInput'),l=document.getElementById('logList');document.getElementById('addLog').addEventListener('click',()=>{if(!i.value.trim())return;const li=document.createElement('li');li.textContent=new Date().toLocaleTimeString('es-BO')+' · '+i.value.trim();l.append(li);i.value='';});})();

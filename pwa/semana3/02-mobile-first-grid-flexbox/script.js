@@ -1,1 +1,0 @@
-(()=>{const b=document.getElementById('simulateMobile'),g=document.getElementById('layoutGrid'),s=document.getElementById('layoutStatus');b.addEventListener('click',()=>{const on=g.classList.toggle('sim-mobile');b.textContent=on?'Restaurar':'Simular vista móvil';s.textContent=on?'Una columna activa.':'Vista adaptable.';});})();
